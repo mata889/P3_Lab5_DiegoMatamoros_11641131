@@ -22,7 +22,7 @@ public:
 	void setSexo(string);
 	void setEdad(string);
 
-	~Personas();
+	virtual~Personas();
 
 };
 #endif
