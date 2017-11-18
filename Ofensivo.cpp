@@ -1,5 +1,8 @@
 #include "Ofensivo.h"
 #include <iostream>
+#include <string>
+#include "Poder.h"
+
 
 using namespace std;
 
@@ -7,9 +10,10 @@ Ofensivo::Ofensivo(){
 	this->rango=" ";
 	this->fuerza=" ";
 }
-Ofensivo::Ofensivo(string pRango,string pFuerza){
+Ofensivo::Ofensivo(string pRango,string pFuerza,string nombre,string nivel):Poder(nombre,nivel){
 	rango=pRango;
 	fuerza=pFuerza;
+
 }
 
 string Ofensivo::getRango(){
@@ -18,9 +22,9 @@ string Ofensivo::getRango(){
 string Ofensivo::getFuerza(){
 	return fuerza;
 }
-void Ofensivo::getRango(string pRango){
+void Ofensivo::setRango(string pRango){
 	rango=pRango;
 }
-void Ofensivo::getFuerza(string pFuerza){
+void Ofensivo::setFuerza(string pFuerza){
 	fuerza=pFuerza;
 }

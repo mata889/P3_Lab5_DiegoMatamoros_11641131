@@ -6,12 +6,12 @@
 
 using namespace std;
 
-class Ofensivo: public Poder{
+class Ofensivo : public Poder{
 private:
 	string rango,fuerza;
 public:
 	Ofensivo();
-	Ofensivo(string,string);
+	Ofensivo(string,string,string, string);
 
 	string getRango();
 	string getFuerza();
@@ -19,5 +19,6 @@ public:
 	void setRango(string);
 	void setFuerza(string);
 
+	//virtual~Ofensivo();
 };
 #endif

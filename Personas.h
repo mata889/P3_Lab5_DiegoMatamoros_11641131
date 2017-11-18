@@ -5,7 +5,7 @@
 using namespace std;
 
 class Personas{
-private:
+protected:
 	string nacion,nombre,sexo;
 	string edad;
 public:
